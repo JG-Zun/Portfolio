@@ -11,6 +11,11 @@ body {
     width: 100vw;
 }
 
+#home #intro {
+    padding-top: 60px;
+}
+
+
 #home #intro h1 {
     text-align: center;
     font-size: 12vw;
@@ -26,24 +31,34 @@ body {
 .about-me {
     height: 100vh;
     width: 100vw;
+    padding-top: 60px;
 }
 
 .skills {
     height: 100vh;
     width: 100vw;
+    padding-top: 60px;
 }
 
 .projects {
     height: 100vh;
     width: 100vw;
+    padding-top: 60px;
 }
 
 .contact {
     height: 100vh;
     width: 100vw;
+    padding-top: 60px;
 }
 
 .navbar {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     text-align: center;
     font-size: 16;
 }
