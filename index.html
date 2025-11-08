@@ -3,46 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a id="nav-name" href="#home"><span class="highlight">Jaskaran</span> Ghotra</a>
+        <div id="shortcuts">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <section id="home" class="home">
         <div id="intro">
-            <h1>Hi, I'm Jas.</h1>
-            <p>Aspiring Software Engineer studying at the University of Ottawa</p>
+            <h1>Hi, I'm <span class="highlight">Jaskaran</span> Singh Ghotra.</h1>
+            <p>Aspiring Software Engineer and first-year co-op student at the University of Ottawa, excited to apply my
+                skills in real-world projects.</p>
+            <a class="buttons" href="#projects" id="view-work-button">View My Work</a>
+            <div class="scroll-down">Scroll</div>
+            <div id="arrow-down" class="scroll-down">↓</div>
         </div>
     </section>
 
     <section id="about-me" class="about-me">
         <div class="about-content">
-            <h1>About Me</h1>
-            <p>First-year Software Engineering student at the University of Ottawa, passionate in programming, game
-                developing, and developing software solutions. I have been learning Python for 3 years, Java for 2, and
+            <h1>About <span class="highlight">Me</span></h1>
+            <h3 class="about-me-text-box">Aspiring Software Engineer</h3>
+            <p class="about-me-text-box">🎓 First-year Software Engineering student at the University of Ottawa,
+                passionate in programming, game
+                developing, and developing software solutions.</p>
+            <p class="about-me-text-box"> I have been learning Python for 3 years, Java for 2, and
                 along with web development (HTML/CSS) for the past year. I'm excited to further develop my skills going
                 forward through personal projects, co-op/internships and collaborative projects.</p>
-            <a href="#contact" class="cta-button">Let's Connect</a>
+            <a href="#contact" class="buttons">Let's Connect</a>
+            <a href="#resume" class="buttons">Resume</a>
         </div>
         <div class="about-me-picture">
-            <img src="PLACEHOLDER" alt="Jas" class="selfie-img">
+            <img src="images/portfolio-img.jpg" alt="Jas">
         </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <p>Python, Java, HTML/CSS/JS</p>
+        <h2>My <span class="highlight">Skills</span></h2>
+
+        <div class="skill-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Front End</button>
+            <button class="filter-btn" data-filter="backend">Back End</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <!-- Skills container -->
+        <div class="skills-list">
+            <div class="skill-item frontend">HTML</div>
+            <div class="skill-item frontend">CSS</div>
+            <div class="skill-item frontend">JavaScript</div>
+
+            <div class="skill-item backend">Java</div>
+            <div class="skill-item backend">Python</div>
+            <div class="skill-item backend">Node.js</div>
+
+            <div class="skill-item tools">Git</div>
+            <div class="skill-item tools">Docker</div>
+            <div class="skill-item tools">Linux</div>
+
+            <!-- Add more skill items as needed -->
+        </div>
+
     </section>
 
     <section id="projects" class="projects">
