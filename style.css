@@ -18,55 +18,104 @@ body {
 
 #home #intro h1 {
     text-align: center;
-    font-size: 12vw;
-    margin-bottom: 0px;
+    font-size: 5vw;
+    margin-top: 250px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 
+
 #home #intro p {
     text-align: center;
-    font-size: 3vw;
+    position: relative;
+    display: block;
+    font-size: 2vw;
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.about-me {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 60px;
+
+.buttons {
+    font-size: 1vw;
+    display: block;
+    width: fit-content;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid rgb(88, 141, 141);
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.skills {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 60px;
+
+
+.buttons:hover {
+    box-shadow: 0px 0px 8px 0.2px rgb(88, 141, 141);
 }
 
-.projects {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 60px;
+.scroll-down {
+    font-size: 1.5vw;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6%;
+    opacity: 0.7;
+    animation: bounce 1.5s infinite;
 }
 
-.contact {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 60px;
+#arrow-down {
+    color: rgb(88, 141, 141);
+    bottom: 3%;
 }
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(-20px);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-20px)
+    }
+}
+
+.highlight {
+    color: rgb(88, 141, 141);
+}
+
+#nav-name {
+    float: left;
+    font-size: 22px;
+    margin: 12px;
+}
+
 
 .navbar {
-    background: white;
+    background: transparent;
+    backdrop-filter: blur(18px);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    text-align: center;
     font-size: 16;
 }
 
 .navbar ul {
+    float: right;
     list-style: none;
     padding: 0;
-    margin: 10 auto;
+    margin: 10px 5vw;
 }
 
 .navbar li {
@@ -79,7 +128,95 @@ body {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar #shortcuts a:hover {
     color: rgb(88, 141, 141);
     font-size: 18px;
+}
+
+
+/* page 2 */
+
+.about-me {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+    font-size: 1.4vw;
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 5vw;
+    position: relative;
+    top: 5vh;
+}
+
+.about-me h3 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.about-me .about-me-text-box {
+    position: relative;
+    left: 15vw;
+    top: 10vh;
+    padding: 5px 0;
+    width: 35vw;
+}
+
+.about-me .buttons {
+    display: inline;
+    position: relative;
+    top: 12vh;
+    left: 23vw;
+    margin-right: 12px;
+    font-size: 1.3vw;
+}
+
+.about-me .about-me-picture img {
+    width: 20vw;
+    height: auto;
+    position: relative;
+    left: 55vw;
+    bottom: 20vw;
+
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+.about-me .about-me-picture img:hover {
+    transform: scale(1.025);
+}
+
+
+/* page 3 */
+
+
+.skills {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+
+
+
+
+
+
+.projects {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+}
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
 }
